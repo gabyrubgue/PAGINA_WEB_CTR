@@ -1,0 +1,432 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient( 45deg, rgb(0, 0, 255),rgb(255, 0, 0));
+    padding: 0px 30px;
+    color: white;
+}
+
+
+/*
+parte de banner  .
+*/
+
+
+.search-bar {
+    flex-grow: 5000;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.search-bar input {
+    width: 150%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #1e2e3d;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu img {
+    width: 45px;
+    margin-left: 20px;
+    border-radius: 90px;
+    height: 45px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    width: 30px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #131212;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(56, 58, 70, 0.89);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a {
+    color: rgb(233, 224, 224);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(146, 145, 145, 0.2);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: white;
+    color: #131212;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Agrega este CSS adicional */
+
+/* Estilos para los enlaces de navegación */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+
+.boton1{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -1140px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+
+ }
+
+ .boton2{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+   
+ }
+
+ 
+
+ .boton3{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+    
+ }
+
+
+ .logo{
+    border-radius: 30px;
+    margin-left: -10px;
+    transform: translateY(30%);
+    width: 155px;
+    height: 145px;
+ }
+
+.buscar{
+    width: 45px;
+    height: 39px;
+    padding-top: 3px;
+    border-radius: 0 10px 10px 0;
+}
+
+/*
+parte de abajo.
+*/
+.delivery-info{
+    background-color: #ccc;
+    top: 50px;
+    position: relative;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+
+    
+}
+
+
+
+
+.delivery-info, .product-info, .payment-method, .actions {
+    margin-bottom: 20px;
+}
+
+.delivery-info p {
+    margin-bottom: 5px;
+}
+
+.delivery-info .predeterminado {
+     
+    color: rgb(228, 20, 20);
+    
+    padding: 10px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: red;
+    border: 2%;
+
+    
+
+}
+
+
+
+
+
+.delivery-info .cambiar {
+    color: rgb(228, 20, 20);
+    
+    padding: 10px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: red;
+    border: 2%;
+}
+
+
+
+
+
+.product-info{
+    background-color: #ccc;
+    top: 50px;
+    position: relative;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.product-info .product-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+
+.product-details img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.product-description p {
+    margin-bottom: 5px;
+}
+
+.payment-method p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.payment-method button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.payment-method .efecty {
+    background-color: #ccc;
+    color: black;
+}
+
+.actions {
+    background-color: #ccc;
+    top: 50px;
+    position: relative;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+
+}
+
+.actions .cancelar, .actions .comprar-ahora {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    
+}
+.actions .cancelar{
+    margin-left: 450px;
+}
+.actions .comprar-ahora{
+    margin-left: 150px;
+}
+
+
+
+.actions .comprar-ahora {
+    background-color: red;
+}
+
+.predeterminado{
+    position: relative;
+    left: 1100px;
+    top: -70px;
+    border: #131212;
+    
+}
+
+
+
+.cambiar{
+    position: relative;
+    left: 1150px;
+    top: -70px;
+}
+
+
+/*codigo para ediitar direccion compra*/
+
+.delivery-info {
+    
+    
+    border-radius: 10px;
+    width: 96%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-info p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#datos-entrega p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+#formulario-entrega input {
+    width: calc(30% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#guardar-btn {
+    background-color: #28a745;
+}
+
+#guardar-btn:hover {
+    background-color: #218838;
+}
+
+
+.cambiar {
+    background-color: #17a2b8;
+}
+
+.cambiar:hover {
+    background-color: #138496;
+}
+
+#predeterminado-text {
+    visibility: hidden; /* Oculto por defecto si quieres */
+    /* Otras reglas de estilo que uses */
+}

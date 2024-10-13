@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient( 45deg, rgb(0, 0, 255),rgb(255, 0, 0));
+    padding: 0px 30px;
+    color: white;
+}
+
+
+.search-bar {
+    flex-grow: 5000;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.search-bar input {
+    width: 150%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #1e2e3d;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu img {
+    width: 45px;
+    margin-left: 20px;
+    border-radius: 90px;
+    height: 45px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    width: 30px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #131212;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(56, 58, 70, 0.89);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a {
+    color: rgb(233, 224, 224);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(146, 145, 145, 0.2);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: white;
+    color: #131212;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+
+.boton1{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -1140px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+
+ }
+
+ .boton2{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+   
+ }
+
+ 
+
+ .boton3{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+    
+ }
+
+
+ .logo{
+    border-radius: 30px;
+    margin-left: -10px;
+    transform: translateY(30%);
+    width: 155px;
+    height: 145px;
+ }
+
+.buscar{
+    width: 45px;
+    height: 40px;
+    padding-top: 3px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+
+
+
+
+
+body {
+    
+    background-image: url(WhatsApp\ Image\ 2024-05-28\ at\ 06.31.39.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+
+
+
+
+
+
+
+.datos-envio {
+    background: linear-gradient(   transparent, gray);
+    padding: 30px;
+    height: 370px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 99px;
+}
+
+.datos-envio h1 {
+    margin-top: 0;
+}
+
+.datos-envio form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.datos-envio form input,
+.datos-envio form select {
+    width: 97%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background:linear-gradient( transparent,rgba(0, 0, 0, 0.471));
+     background-attachment: fixed;
+    
+}
+
+
+
+
+
+.Pago{
+    width: 104%;
+}
+
+
+
+.datos-envio ::placeholder{
+    color: rgb(190, 196, 203);
+}
+
+
+
+  
+  select,
+  option {
+    color:  rgb(190, 196, 203);
+    background-color: rgb(58, 8, 104);
+}
+
+.comprar{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    top: 20px;
+    left: 150px;
+}
+
+.cancelar{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    top: 20px;
+    left: 250px;
+}
+
+
+
+
+
+  

@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient( 45deg, rgb(0, 0, 255),rgb(255, 0, 0));
+    padding: 0px 30px;
+    color: white;
+}
+
+
+/*
+parte de banner  .
+*/
+
+
+.search-bar {
+    flex-grow: 5000;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.search-bar input {
+    width: 150%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #1e2e3d;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu img {
+    width: 45px;
+    margin-left: 20px;
+    border-radius: 90px;
+    height: 45px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    width: 30px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #131212;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(56, 58, 70, 0.89);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a {
+    color: rgb(233, 224, 224);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(146, 145, 145, 0.2);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: white;
+    color: #131212;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Agrega este CSS adicional */
+
+/* Estilos para los enlaces de navegación */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+
+.boton1{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -1140px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+
+ }
+
+ .boton2{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+   
+ }
+
+ 
+
+ .boton3{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+    
+ }
+
+
+ .logo{
+    border-radius: 30px;
+    margin-left: -10px;
+    transform: translateY(30%);
+    width: 155px;
+    height: 145px;
+ }
+
+.buscar{
+    width: 45px;
+    height: 40px;
+    padding-top: 3px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.corner-image {
+    position: absolute;
+    top: 45px;
+    right: 1500px;
+    width: 150px;
+    height: auto;
+    border: 8px solid #ffffff;
+    border-radius: 20px;
+
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2px;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagen-box {
+    text-align: center;
+    padding: 30px;
+    background: #c9c9c9;
+    border: 1px solid #828282;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 200px; 
+    height: 180px;
+    margin: 10px; 
+}
+
+.imagen-box img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagen-box p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.imagen-box:hover {
+    transform: translateY(-5px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    
+    
+}
+td {
+    border: 10px solid #0080ff;
+    padding: 10px;
+    text-align: center;
+    
+}   
+
+
+.img {
+    max-width: 150px; 
+    height: auto;
+    border-radius: 15%;
+    
+}
+
+
+.tabla-promociones{
+    margin-top: 70px;
+    position: relative;
+
+}
+
+
+
+tr :hover {
+    background-color: #007bff;
+
+}
+
+.div :hover {
+    background-color:rgb(102, 100, 100);
+    color: white;
+}
+
+.td-prom {
+    background-color: #007bff;
+}
+
+
+img :hover{
+
+    .product:hover {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+

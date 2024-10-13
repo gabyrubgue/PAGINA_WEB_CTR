@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTR Construcciones</title>
+    <link rel="stylesheet" href="DATOS DE ENVIO.css">
+    <style>
+        body
+        {
+            background-image:url(fondos.png);
+
+        }
+        
+
+    </style>
+</head>
+<body>
+
+
+    <header>
+       
+        <div>
+            <a href="MAQUETADO.html"><img class="logo"  src="LOGO CTR.png" alt="GTR Construcciones"></a>       
+            </div>
+
+
+
+
+
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button><img class="buscar" src="buscarlogo.png" alt="Buscar"></button>
+        </div>
+        <nav>
+          <ul>
+            <li class="boton1"><a href="SERVICIOS.HTML">Servicios </a></li>
+            <li class="boton2"><a href="productos.html">Productos </a></li>
+            <li class="boton3"><a href="DATOS DE ENVIO.html">Paga ahora </a></li>
+        </ul>
+        </nav>
+        <div class="user-menu">
+            <div class="dropdown">
+                <img src="Menu icon.png" alt="Menú" class="dropbtn">
+                <div class="dropdown-content">
+                    <a href="#">Opción 1</a>
+                    <a href="#">Opción 2</a>          
+                    <a href="#">Opción 3</a>
+                </div>
+            </div>
+            </div>
+                
+            </div>
+            <div class="user-menu">
+                <div class="dropdown">
+                    <a href="carritoCompras.html"><img src="Carrito de compras.png" alt="Carrito"></a>
+                    <div class="dropdown-content">
+                    
+                </div> 
+                </div>
+            </div> 
+            <div class="user-menu">
+                <div class="dropdown">
+                    <img  src="usuario.png" alt="Usuario">
+                    <div class="dropdown-content">
+                        <a href="#">Cerrar Sesion</a>
+                        <a href="login.html">Iniciar Sesion</a>          
+                        <a href="login.html">Registrarse</a>
+                        <a href="editarPerfil.html">Editar Perfil</a>
+
+    
+                    </div>
+                </div>
+            </div>
+    </header>
+    
+    
+
+
+    <br>
+    <br>
+    <br>
+    <section class="datos-envio">
+        <h1>Datos De Envío</h1>
+        <form>
+           
+            <label for="telefono"></label> Nombre Completo<input type="tel" id="telefono" name="telefono" placeholder="Nombre completo">
+            
+            <div  class="Pago">
+            <label  for="metodoPago">Método De Pago</label>
+
+
+                <select  id="metodoPago" name="metodoPago">
+               
+                <option value="metodo Pago">Seleccione un método</option>
+            </div>
+                <option value="tarjeta">Tarjeta De Crédito</option>
+                <option value="Nequi">Nequi</option>
+                <option value="contra entrega">Contra Entrega</option>
+
+            </select>
+        </div>
+            <div class="abajo">
+            <label for="telefono"></label> <input type="tel" id="telefono" name="telefono" placeholder="Numero telefonico">
+            
+            <label for="ciudad"></label> <input type="text" id="ciudad" name="ciudad"  placeholder="Departamento y Ciudad">
+            
+            <label for="direccion"></label> <input type="text" id="direccion" name="direccion"  placeholder="Dirección">
+            </div>
+
+        </form>
+        <a href="factura.html"><button class="comprar" type="submit">Comprar</button></a>
+        <button  class="cancelar" type="reset">Cancelar</button>
+    </section>
+    
+
+
+</body>
+</html>

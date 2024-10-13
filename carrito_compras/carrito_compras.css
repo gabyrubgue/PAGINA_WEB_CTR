@@ -1,0 +1,355 @@
+/**-------------------------------------------ENCABEZADO-------------------------------------------**/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    overflow-x: hidden; 
+    
+    
+   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient( 45deg, rgb(0, 0, 255),rgb(255, 0, 0));
+    padding: 0px 30px;
+    color: white;
+}
+
+
+/*
+parte de banner  .
+*/
+
+
+.search-bar {
+    flex-grow: 5000;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.search-bar input {
+    width: 150%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #1e2e3d;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu img {
+    width: 45px;
+    margin-left: 20px;
+    border-radius: 90px;
+    height: 45px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    width: 30px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #131212;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(56, 58, 70, 0.89);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a {
+    color: rgb(233, 224, 224);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(146, 145, 145, 0.2);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: white;
+    color: #131212;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Agrega este CSS adicional */
+
+/* Estilos para los enlaces de navegación */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+
+.boton1{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left:-1140px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+
+ }
+
+ .boton2{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+   
+ }
+
+ 
+
+ .boton3{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+    
+ }
+
+
+ .logo{
+    border-radius: 30px;
+    margin-left: -10px;
+    transform: translateY(30%);
+    width: 155px;
+    height: 145px;
+ }
+
+.buscar{
+    width: 45px;
+    height: 39px;
+    padding-top: 3px;
+    border-radius: 0 10px 10px 0;
+}
+
+/**-----------------------------------------------------------------------------------------------------------------------**/
+
+
+.producto {
+    background-color: #cccccc;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    height: 150px;
+  }
+
+.producto-check{
+    background-color: #cccccc;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+
+}
+  
+  label {
+    margin-left: 5px;
+  }
+  
+  
+
+.producto1{
+    position: relative;
+    right: 30px;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    
+}
+
+.producto h3 {
+    position: relative;
+    left: 160px;
+    top: -140px;
+    text-align:left;
+}
+
+
+
+
+
+
+
+.seleccionartodo {
+    background-color: #cccccc;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    height: 80px;
+  }
+
+
+.checkbox {
+    margin-right: 6px;
+  }
+
+.checkbox {
+    /* Doble-tamano Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari y Chrome */
+    -o-transform: scale(2); /* Opera */
+    padding: 10px;
+}
+
+.checkbox1{
+    transform: scale(2);
+    padding: 30px;
+    top: 100px;
+    transform: translateY(75%);
+    width: 30px;
+    width: 30px; /* Ancho del checkbox */
+    height: 30px;
+
+
+    
+
+}
+.Aceptar{
+
+    background-color: transparent;
+    color: red;
+    font-size: 1rem;
+    padding: 1rem ;
+    border: 2px solid #1e2e3d;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #1e2e3d; 
+    margin-left: 90%;
+    top: 4px;
+    transform: translateY(-160%);
+}
+    
+
+/* Tal vez desee envolver un espacio alrededor de su texto de casilla de verificacion */
+.letra
+{
+  /* letra de seleccionar todo */
+  font-size: 25px;
+  display: inline;
+} 
+
+.letra1
+{
+  /* letra de el total */
+  font-size: 25px;
+  display: inline;
+} 
+
+.seleccionar{
+    margin-left: 5%;
+    top: 50px;
+    transform: translateY(-50%);
+}
+
+.total{
+    margin-left: 80%;
+    top: 60px;
+    transform: translateY(-170%);
+}
+
+.basura{
+    height: 25px;
+    position: relative;
+    top: -110px;
+    left: 1750px;
+}
+
+
+
+/*editar direccion de entrega*/
+
+
+
+

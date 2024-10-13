@@ -1,0 +1,177 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(45deg, rgb(0, 0, 255), rgb(255, 0, 0));
+    color: white;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos del cuerpo */
+body {
+
+    background-color: #112b7d;
+    background-image: url(fondos.png);
+    background-size: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    max-width: 100%;
+    min-height: 110px;
+    padding: 150px; /* Añadido para dar un espacio interior uniforme */
+}
+
+/* Estilos del párrafo dentro del contenedor */
+.container p {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+/* Estilos para texto pequeño dentro del contenedor */
+.container span {
+    font-size: 15px;
+}
+
+
+
+
+/* Estilos para enlaces dentro del contenedor */
+.container a {
+color: #333;
+font-size: 23px;
+text-decoration: none;
+margin: 10px 0 5px;
+}
+
+/* Estilos para botones dentro del contenedor */
+.container button {
+background-color: #fc000d;
+color: #fff;
+font-size: 12px;
+padding: 10px 25px;
+border: 0px solid transparent;
+border-radius: 8px;
+font-weight: 500px;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+cursor: pointer;
+width: 200px;
+}
+
+.enviarcode{
+margin-left: 35px;
+position: relative;
+top: 30px;
+
+}
+
+.reenviarcode1 {
+margin-left: 260px;
+position: relative;
+top: -5px;
+}
+
+.Cancelar{
+    margin-left: -10px;
+}
+.Confirmar{
+    margin-left: 20px;
+}
+
+.separar{
+    position: relative;
+    top: 20px;
+}
+
+.botones{
+    position: relative;
+    top: 40px;
+}
+
+
+
+
+
+/* Estilos específicos para un botón oculto */
+.container button.hidden {
+background-color: transparent;
+border-color: #fff;
+
+}
+
+
+/* Estilos para el formulario dentro del contenedor */
+.container form {
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 40px;
+height: 100%;
+margin-left: -140px;
+margin-top: -50px;
+}
+
+/* Estilos para los inputs dentro del formulario */
+.container input {
+background-color: #eee;
+border: none;
+margin: 8px 0;
+padding: 10px 15px;
+font-size: 13px;
+border-radius: 8px;
+width: 100%;
+outline: none;
+}
+
+/* Estilos para la animación del formulario */
+.form-container {
+position: absolute;
+top: 0;
+height: 100%;
+transition: all 0.6s ease-in-out;
+}
+
+/* Estilos para el botón con clase .boton /
+.boton {
+background-image: url(LOGINLOGO CASALOGO CASA.png);
+background-size: 49px; / Ajusta el tamaño según sea necesario /
+background-position: center;
+transform: translateY(30%);
+border-radius: 50%; / Hace el botón circular ajustando según se necesite /
+border: none; / Sin bordes /
+cursor: pointer;
+position: absolute;
+width: 50px;
+height: 50px; / Ajusta el tamaño del botón según sea necesario /
+left: 1470px; / Ajusta la posición izquierda /
+top: 650px; / Ajusta la posición superior */
+
+input.codigo{
+width: 200px;
+position: relative;
+top: 20px;
+}

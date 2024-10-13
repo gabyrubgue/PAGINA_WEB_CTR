@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTR Construcciones</title>
+    <link rel="stylesheet" href="confirmacion_compra.css">
+    <script defer src="confirmacion_compra.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index/index.html"><img class="logo"  src="images/LOGO CTR.png" alt="GTR Construcciones"></a>       
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button><img class="buscar" src="images/buscarlogo.png" alt="Buscar"></button>
+        </div>
+        <nav>
+          <ul>
+            <li class="boton1"><a href="../servicios/servicios.html">Servicios </a></li>
+            <li class="boton2"><a href="../productos/productos.html">Productos </a></li>
+            <li class="boton3"><a href="../datos_de_envio/datos_de_envio.html">Paga ahora </a></li>
+          </ul>
+        </nav>
+        <div class="user-menu">
+            <div class="dropdown">
+                <img src="images/Menu icon.png" alt="Menú" class="dropbtn">
+                <div class="dropdown-content">
+                    <a href="#">Opción 1</a>
+                    <a href="#">Opción 2</a>          
+                    <a href="#">Opción 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="user-menu">
+            <div class="dropdown">
+                <a href="carritoCompras.html"><img src="images/Carrito de compras.png" alt="Carrito"></a>
+            </div>
+        </div> 
+        <div class="user-menu">
+            <div class="dropdown">
+                <img src="images/usuario.png" alt="Usuario">
+                <div class="dropdown-content">
+                    <a href="#">Cerrar Sesion</a>
+                    <a href="../login/login.html">Iniciar Sesion</a>          
+                    <a href="../login/login.html">Registrarse</a>
+                    <a href="../editar_perfil/editar_perfil.html">Editar Perfil</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="delivery-info">
+        <p><strong>Dirección de entrega</strong></p>
+        <div id="datos-entrega">
+            <p id="nombre-entrega">Gabriela Rubio Guevara</p>
+            <p id="telefono-entrega">3124554508</p>
+            <p id="direccion-entrega">Super M 3 M 5 casa 34, calle 45</p>
+        </div>
+        <div id="formulario-entrega" style="display: none;">
+            <input type="text" id="nombre-input" value="Gabriela Rubio Guevara">
+            <input type="text" id="telefono-input" value="3124554508">
+            <input type="text" id="direccion-input" value="Super M 3 M 5 casa 34, calle 45">
+        </div>
+        <button id="predeterminado-btn" class="predeterminado">Predeterminado</button>
+        <button id="cambiar-btn" class="cambiar">Cambiar</button>
+        <button id="guardar-btn" class="guardar" style="display: none;">Guardar</button>
+    </div>
+
+    <div class="product-info">
+        <p class="product-title">Productos seleccionados</p>
+        <div class="product-details">
+            <img src="images/Herrammienta1.png" alt="Calentador">
+            <div class="product-description">
+                <p>Calentador De Acumulación A Gas 115 Litros</p>
+                <p>Cantidades: <input id="cantidad" type="number" value="1" min="1" max="333"></p>
+                <p>Total de compra: $<span id="precio-producto">500</span></p>
+                <p>Total de envío: $<span id="envio">50</span></p>
+                <p>Total del pedido: $<span id="total-pedido">550</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button class="cancelar">Cancelar</button>
+        <button class="comprar-ahora">Comprar Ahora</button>
+    </div>

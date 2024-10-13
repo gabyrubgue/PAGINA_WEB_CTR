@@ -1,0 +1,386 @@
+/**-------------------------------------------ENCABEZADO-------------------------------------------**/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    overflow-x: hidden; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient( 45deg, rgb(0, 0, 255),rgb(255, 0, 0));
+    padding: 0px 30px;
+    color: white;
+}
+
+
+/*
+parte de banner  .
+*/
+
+
+.search-bar {
+    flex-grow: 5000;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.search-bar input {
+    width: 150%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #1e2e3d;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu img {
+    width: 45px;
+    margin-left: 20px;
+    border-radius: 90px;
+    height: 45px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    width: 30px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #131212;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(56, 58, 70, 0.89);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a {
+    color: rgb(233, 224, 224);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(146, 145, 145, 0.2);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: white;
+    color: #131212;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Agrega este CSS adicional */
+
+/* Estilos para los enlaces de navegación */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+
+.boton1{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -1140px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+
+ }
+
+ .boton2{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+   
+ }
+
+ 
+
+ .boton3{
+    position: sticky;
+    background-color: transparent;
+    margin: -1px;
+    margin-left: -300px;
+    border: 0;
+    top: 56%;
+    transform: translateY(90%);
+    font-size: 15px;
+    color: white;
+    padding: 22px;
+    
+    
+ }
+
+
+ .logo{
+    border-radius: 30px;
+    margin-left: -10px;
+    transform: translateY(30%);
+    width: 155px;
+    height: 145px;
+ }
+
+.buscar{
+    width: 45px;
+    height: 39px;
+    padding-top: 3px;
+    border-radius: 0 10px 10px 0;
+}
+
+/**------------------------------------------CONTENIDO-----------------------------------**/
+
+table{
+    width: auto;
+    border-collapse: collapse;
+    
+}
+
+.td-tabla-descripcion {
+    border: 4px solid #000000;
+    text-align: left;
+    width: 300px;
+}
+
+.precio {
+    position: relative;
+    right: 0px;
+    top: 50px;
+    background: linear-gradient(transparent, #b3b3b3);
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+.table-producto{
+    border: 10px solid #b3b3b3;
+    
+}
+
+
+.imagen1{
+    width: 400px;
+    height: 500px;
+    
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+    top: 80px;
+    
+}
+
+
+.contenedor-calificacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+
+.estrella {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url('estrella.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: background-image 0.3s ease; 
+}
+
+.estrella:hover,
+.estrella input:checked ~ .estrella {
+    background-image: url('estrella.png'); 
+}
+
+.estrella.estrella-1 input:checked ~ .estrella {
+    background-image: url('estrella.png'); /
+}
+
+.estrella.estrella-2 input:checked ~ .estrella {
+    background-image: url('estrella.png');
+}
+
+.estrella.estrella-3 input:checked ~ .estrella {
+    background-image: url('estrella.png');
+}
+
+.estrella.estrella-4 input:checked ~ .estrella {
+    background-image: url('estrella.png');
+}
+
+.estrella.estrella-5 input:checked ~ .estrella {
+    background-image: url('estrella.png');
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+
+
+
+.boton-carro-compras {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+    width: 150px;
+    height: 50px;
+    left: 920px;
+    background-position: center;
+    transform: translate(5%);
+    margin: 10px;
+}
+
+
+.boton-comprar-ahora {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    top: 110px;
+    width: 150px;
+    height: 50px;
+    left: 1070px;
+    background-position: center;
+    transform: translate(10%);
+    margin: 10px;
+}
+
+
+
+
+
+
+
+.incrementar{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    padding: 10px 20px ;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+
+.numero{
+    margin: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.decrementar{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    padding: 10px 20px ;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+
+.contador-container{
+    position: relative;
+    left: 150px;
+}
+

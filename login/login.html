@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="LOGIN.css">
+    <title>CTR Construcciones</title>
+    <a href="MAQUETADO.html"> <button class="boton"> </button></a>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Crear Cuenta</h1>
+                <span>O usa tu email para registrarte</span>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <a href="Inicio-logueado.html"><button type="button">Registrarme</button></a>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Iniciar Sesion</h1>
+                <span>o usa la contraseña de tu email</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <a href="olvidarContraseña.html">Olvido su contraseña?</a>
+                <a href="Inicio-logueado.html"><button type="button">Iniciar sesion</button></a>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bienvenido Nuevamente a CTR Construcciones!</h1>
+                    <p>Ingrese sus datos personales para utilizar todas las funciones del sitio</p>
+                    <button class="hidden" id="login">Iniciar sesion</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Registrese gratis!</h1>
+                    <p>Regístrese con sus datos personales para utilizar todas las funciones del sitio</p>
+                    <button class="hidden" id="register">Registrarme</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script(1).js"></script>
+</body>
+</html>
